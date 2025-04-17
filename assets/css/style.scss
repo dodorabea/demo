@@ -1,0 +1,746 @@
+@charset "utf-8";
+
+/*-----------------------
+    Fonts
+-------------------------*/
+@font-face {
+    font-family: 'ReemKufi-Regular';
+    src: url('../fonts/ReemKufi-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ReemKufi-Medium';
+    src: url('../fonts/ReemKufi-Medium.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ReemKufi-SemiBold';
+    src: url('../fonts/ReemKufi-SemiBold.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ReemKufi-Bold';
+    src: url('../fonts/ReemKufi-Bold.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*-----------------------
+    :root
+-------------------------*/
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2ecc71;
+}
+
+/*-----------------------
+    Global Style
+-------------------------*/
+.scrollby-body {
+    overflow-x: unset !important;
+    overflow: unset !important;
+}
+
+.myScrollspy {
+    position: sticky;
+    top: 10%;
+}
+
+::selection {
+    background: #000;
+    color: #fff;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: #F1F1F1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #BBBDC1;
+    border-radius: 120px;
+}
+
+html {
+    -webkit-text-size-adjust: 100%;
+    line-height: 1.15;
+    scroll-behavior: initial;
+    overflow-x: hidden !important;
+}
+
+body {
+    color: #000000;
+    font-size: 16px;
+    vertical-align: baseline;
+    overflow-x: hidden !important;
+    font-weight: 400;
+    font-style: normal;
+    padding-right: 0 !important;
+    font-family: 'ReemKufi-Regular';
+
+    &.modal-open {
+        padding: 0 !important;
+    }
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+figure,
+ol,
+p,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    padding: 0;
+    margin: 0;
+    text-rendering: optimizelegibility;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: unset;
+}
+
+/*-----------------------
+    Header
+-------------------------*/
+header {
+    .header-action-list {
+        li {
+            .icon {
+                inline-size: 45px;
+                min-inline-size: 45px;
+                max-inline-size: 45px;
+                block-size: 45px;
+                border-radius: 0.75rem;
+            }
+
+            &.menu-action {
+                .icon {
+                    border: 1px solid #FFFFFF;
+                    background: #0B83FD;
+                }
+            }
+
+            &.home-action {
+                .icon {
+                    border: 1px solid #ECECEC;
+                    background: #ECECEC;
+                }
+            }
+
+            &.cart-action {
+                .icon {
+                    border: 1px solid #C5EBFE;
+                    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+                }
+
+                .badge {
+                    border-radius: 100%;
+                }
+            }
+        }
+    }
+}
+
+/*-----------------------
+    breadcrumb
+-------------------------*/
+.breadcrumb-nav {
+    .breadcrumb {
+        &-item {
+            font-size: 18px;
+            text-transform: capitalize;
+
+            &:not(.active) {
+                a {
+                    color: #AAACAE;
+                }
+            }
+
+            &.active {
+                color: #000000;
+            }
+        }
+    }
+
+    .breadcrumb-item+.breadcrumb-item::before {
+        position: absolute;
+        top: 0;
+        margin: auto;
+        bottom: 0;
+        content: '';
+        width: 8px;
+        height: 8px;
+        background: #0B83FD;
+        border-radius: 100%;
+        inset-inline-start: -0.75rem;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    }
+}
+
+/*-----------------------
+    banner
+-------------------------*/
+.banner-section {
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    background-size: cover !important;
+    border-radius: 16px;
+    min-height: 150px;
+
+    h2 {
+        @media (min-width: 768px) {
+            font-size: 50px;
+        }
+
+        text-transform: capitalize;
+        font-family: 'ReemKufi-SemiBold';
+    }
+
+    h3 {
+        @media (min-width: 768px) {
+            font-size: 50px;
+        }
+
+        font-family: 'ReemKufi-SemiBold';
+    }
+
+    p {
+        text-transform: capitalize;
+        font-size: 18px;
+        font-family: 'ReemKufi-Medium';
+    }
+}
+
+/*-----------------------
+    main-product-section
+-------------------------*/
+.swiper-slide {
+    .main-product-section-card {
+        opacity: 0.7;
+    }
+
+    &.swiper-slide-active,
+    &.active {
+        .main-product-section-card {
+            opacity: 1;
+        }
+    }
+
+    .main-product-section-card {
+        width: 100%;
+        min-height: 100px;
+        overflow: hidden;
+        padding: 8px;
+        border-radius: 55px;
+
+        .item {
+            padding: 12px;
+            width: 100%;
+            border-radius: 55px;
+
+            img {
+                height: 48px;
+            }
+
+            p {
+                font-size: 18px;
+            }
+        }
+    }
+
+    &:nth-child(odd) {
+        .main-product-section-card {
+            border: 1px solid #F0C4C1;
+
+            .item {
+                background: rgb(240 227 193 / 10%);
+            }
+        }
+    }
+
+    &:nth-child(even) {
+        .main-product-section-card {
+            border: 1px solid #C5EBFE;
+
+            .item {
+                background: rgb(197 235 254 / 10%);
+            }
+        }
+    }
+}
+
+/*-----------------------
+    sub-product
+-------------------------*/
+.sub-product {
+    &-title {
+        text-transform: capitalize;
+        font-size: 32px;
+        padding: 0;
+    }
+}
+
+.sub-product-card {
+    padding: 16px;
+    border-radius: 30px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin-top: 70px;
+
+    .card-header {
+        margin-top: -70px;
+
+        img {
+            height: 150px;
+        }
+    }
+
+    .card-body {
+        min-height: 160px;
+
+        h4 {
+            color: #3D3D3D;
+            font-size: 24px;
+            font-family: 'ReemKufi-Medium';
+
+            @media (min-width: 768px) {
+                padding-inline-end: 15%;
+                display: -webkit-box;
+                line-clamp: 2;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+        }
+
+        p {
+            color: #3D3D3D;
+            font-size: 14px;
+            display: -webkit-box;
+            line-clamp: 4;
+            -webkit-line-clamp: 4;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
+
+    .card-footer {
+        li {
+            .rate {
+                color: #3D3D3D;
+                font-size: 24px;
+            }
+
+            .qr-span {
+                font-size: 18px;
+                color: #070A13;
+                font-family: 'ReemKufi-Medium';
+            }
+
+            .add-to-card {
+                min-inline-size: 30px;
+                max-inline-size: 30px;
+                inline-size: 30px;
+                block-size: 30px;
+                border-radius: 100%;
+                background: #0B83FD;
+            }
+        }
+    }
+}
+
+.sidebar {
+    transition: all 0.3s ease;
+}
+
+.content {
+    transition: all 0.3s ease;
+}
+
+.sidebar.d-none {
+    transition: all 0.3s ease;
+}
+
+/*-----------------------
+    chat-ai-card
+-------------------------*/
+.chat-ai-card {
+    @media (min-width: 768px) {
+        position: fixed;
+        bottom: 0;
+        flex: 0 0 auto;
+        width: 32.33333333%;
+    }
+
+    @media (min-width: 500px) and (max-width: 768px) {
+        width: 100%;
+
+        .chat-ai {
+            display: block;
+            margin: 0 auto;
+            width: 50%;
+        }
+    }
+
+    @media (max-width: 499.98px) {
+        width: 100%;
+
+        .chat-ai {
+            width: 100%;
+        }
+    }
+
+    .btn-speak {
+        background: rgb(160 142 94 / 80%);
+        min-height: 48px;
+        padding: 0 1.25rem;
+        width: max-content;
+        margin: 0 auto;
+        color: #fff;
+        font-size: 24px;
+        text-transform: capitalize;
+        position: absolute;
+        bottom: 16px;
+        right: 0;
+        left: 0;
+    }
+}
+
+/*-----------------------
+    chat-ai-card
+-------------------------*/
+.extra-meals-card {
+    height: 200px;
+    border-radius: 16px;
+
+    img {
+        object-fit: cover;
+    }
+
+    &::after {
+        content: ' ';
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background: rgb(0 0 0 / 45%);
+        width: 100%;
+        height: 100%;
+    }
+
+    .extra-meals-text {
+        position: absolute;
+        text-transform: capitalize;
+        top: 16px;
+        left: 16px;
+        z-index: 11;
+        color: #fff;
+        font-size: 35px;
+        font-family: 'ReemKufi-SemiBold';
+    }
+}
+
+/*-----------------------
+    offcanvas
+-------------------------*/
+.offcanvas {
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border: 1px solid #fff;
+    border-radius: 24px 0 0 24px;
+    --bs-offcanvas-width: 280px;
+    top: 16px !important;
+    bottom: 16px;
+    padding-top: 1rem;
+    .counter {
+        input {
+            color: #070A13;
+            font-size: 35px;
+            outline: 0 !important;
+            border-color: transparent !important;
+            font-family: 'ReemKufi-Medium';
+        }
+    
+        .counter__decrement,
+        .counter__increment {
+            min-inline-size: 60px;
+            max-inline-size: 60px;
+            inline-size: 60px;
+            block-size: 60px;
+            border-radius: 100%;
+            color: #fff;
+            background: linear-gradient(90deg, #0EB0FF 0%, #0B83FD 100%);
+        }
+    }
+    
+    .card-total-price {
+        border: 1px solid #C5EBFE;
+        border-radius: 20px;
+        padding: 0.5rem 1rem;
+    
+        .name {
+            color: #585858;
+        }
+    
+        .value {
+            font-size: 14px;
+            color: #3B3A3A;
+            font-family: 'ReemKufi-Medium';
+        }
+    }
+    
+   
+    
+    textarea.form-control {
+        resize: unset !important;
+        border: 1px solid #C5EBFE;
+        border-radius: 20px;
+        outline: unset !important;
+        box-shadow: none !important;
+    
+        &::placeholder {
+            font-size: 13px;
+        }
+    
+        &::-ms-input-placeholder {
+            font-size: 13px;
+        }
+    }
+    
+    .card-product-style {
+        padding: 16px;
+        border-radius: 24px;
+        box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+    
+        .prouct-image {
+            width: 50px;
+        }
+    
+        .text {
+            width: calc(100% - 55px);
+    
+            h6 {
+                font-size: 18px;
+                color: #070A13;
+                display: -webkit-box;
+                line-clamp: 1;
+                -webkit-line-clamp: 1;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                font-family: 'ReemKufi-Medium';
+            }
+    
+            span {
+                font-size: 14px;
+                color: #272A49;
+                font-family: 'ReemKufi-Medium';
+            }
+    
+            input {
+                width: 16px;
+                color: #070A13;
+                font-size: 12px;
+                outline: 0 !important;
+                border-color: transparent !important;
+                font-family: 'ReemKufi-Medium';
+            }
+    
+            .counter__decrement,
+            .counter__increment {
+                min-inline-size: 18px;
+                max-inline-size: 18px;
+                inline-size: 18px;
+                block-size: 18px;
+                border-radius: 100%;
+                color: #fff;
+                background: linear-gradient(90deg, #0EB0FF 0%, #0B83FD 100%);
+            }
+        }
+    }
+}
+
+.offcanvas-backdrop {
+    background-color: transparent;
+    opacity: 1 !important;
+}
+
+.offcanvas-header {
+    p {
+        font-size: 32px;
+        text-transform: capitalize;
+    }
+
+    .main-product {
+        height: 175px;
+        border-radius: 20px;
+
+        img {
+            object-fit: cover;
+        }
+    }
+
+    .details {
+        h4 {
+            color: #070A13;
+            font-size: 24px;
+            font-family: 'ReemKufi-Medium';
+        }
+
+        ul {
+            li {
+                font-size: 18px;
+                font-family: 'ReemKufi-Medium';
+                color: #272A49;
+            }
+
+            span {
+                font-size: 18px;
+                color: #3D3D3D;
+            }
+        }
+
+        p {
+            font-size: 13px;
+            color: #989DA3;
+            font-weight: normal;
+        }
+    }
+}
+
+.offcanvas-footer {
+    .btn-pay {
+        font-size: 28px;
+        color: #fff;
+        min-height: 48px;
+        border-radius: 15px;
+        background: linear-gradient(90deg, #0EB0FF 0%, #0B83FD 100%);
+        border: 1px solid #fff;
+        font-family: 'ReemKufi-SemiBold';
+    }
+}
+
+.form-label {
+    color: #585858;
+    font-size: 16px;
+}
+/*-----------------------
+    modal
+-------------------------*/
+.modal{
+    .btn-close{
+        width: 24px;
+        height: 24px;
+        background: #ECECEC;
+        color: #000;
+        opacity: 1;
+        border-radius: 100%;
+        font-size: 19px;
+        outline: none !important;
+        box-shadow: none !important;
+        @media (max-width: 991.98px) {
+            position: absolute;
+            top: 16px;
+            inset-inline-end: 16px;
+        }
+    }
+    .modal-body{
+        padding-block: 24px;
+        .image-part{
+            @media (min-width: 992px) {
+                width: 310px;
+            }
+            @media (max-width: 991.98px) {
+                width: 100%;
+            }
+            img{
+                border-radius: 24px;
+                width: 100%;
+                height: 268px;
+                object-fit: cover;
+            }
+        }
+        .main-title-part{
+            h3{
+                color: #3D3D3D;
+                font-size: 24px;
+                font-family: "ReemKufi-Medium";
+                width: calc(100% - 30px);
+            }
+        }
+        p{
+            color: #3D3D3D;
+        }
+        .price{
+            font-size: 24px;
+            color: #f13035;
+            font-family: 'ReemKufi-SemiBold';
+        }
+        .form-control{
+            resize: unset;
+        }
+        .counter__decrement,
+            .counter__increment {
+                min-inline-size: 30px;
+                max-inline-size: 30px;
+                inline-size: 30px;
+                block-size: 30px;
+                border-radius: 100%;
+                color: #fff;
+                background: #fff;
+                border: 1px solid #eee;
+                img{
+                    filter: brightness(0) saturate(100%) invert(0%) sepia(96%) saturate(14%) hue-rotate(273deg) brightness(99%) contrast(104%);
+                }
+            }
+            input {
+                width: 32px;
+                color: #070A13;
+                font-size: 12px;
+                outline: 0 !important;
+                border-color: transparent !important;
+                font-family: 'ReemKufi-Medium';
+            }
+    }
+    .modal-footer{
+        padding: 6px 16px;
+        .btn{
+            min-height: 45px;
+            border-radius: 12px;
+            background: #f13035;
+            border: 1px solid #fff;
+            font-size: 18px;
+            font-family: 'ReemKufi-Medium';
+        }
+    }
+}

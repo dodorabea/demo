@@ -1,0 +1,660 @@
+/*-----------------------
+    Fonts
+-------------------------*/
+@font-face {
+  font-family: "ReemKufi-Regular";
+  src: url("../fonts/ReemKufi-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "ReemKufi-Medium";
+  src: url("../fonts/ReemKufi-Medium.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "ReemKufi-SemiBold";
+  src: url("../fonts/ReemKufi-SemiBold.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "ReemKufi-Bold";
+  src: url("../fonts/ReemKufi-Bold.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+/*-----------------------
+    :root
+-------------------------*/
+:root {
+  --primary-color: #3498db;
+  --secondary-color: #2ecc71;
+}
+
+/*-----------------------
+    Global Style
+-------------------------*/
+.scrollby-body {
+  overflow-x: unset !important;
+  overflow: unset !important;
+}
+
+.myScrollspy {
+  position: sticky;
+  top: 10%;
+}
+
+::-moz-selection {
+  background: #000;
+  color: #fff;
+}
+
+::selection {
+  background: #000;
+  color: #fff;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F1F1F1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #BBBDC1;
+  border-radius: 120px;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  line-height: 1.15;
+  scroll-behavior: initial;
+  overflow-x: hidden !important;
+}
+
+body {
+  color: #000000;
+  font-size: 16px;
+  vertical-align: baseline;
+  overflow-x: hidden !important;
+  font-weight: 400;
+  font-style: normal;
+  padding-right: 0 !important;
+  font-family: "ReemKufi-Regular";
+}
+body.modal-open {
+  padding: 0 !important;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+figure,
+ol,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+  text-rendering: optimizelegibility;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: unset;
+}
+
+/*-----------------------
+    Header
+-------------------------*/
+header .header-action-list li .icon {
+  inline-size: 45px;
+  min-inline-size: 45px;
+  max-inline-size: 45px;
+  block-size: 45px;
+  border-radius: 0.75rem;
+}
+header .header-action-list li.menu-action .icon {
+  border: 1px solid #FFFFFF;
+  background: #0B83FD;
+}
+header .header-action-list li.home-action .icon {
+  border: 1px solid #ECECEC;
+  background: #ECECEC;
+}
+header .header-action-list li.cart-action .icon {
+  border: 1px solid #C5EBFE;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+header .header-action-list li.cart-action .badge {
+  border-radius: 100%;
+}
+
+/*-----------------------
+    breadcrumb
+-------------------------*/
+.breadcrumb-nav .breadcrumb-item {
+  font-size: 18px;
+  text-transform: capitalize;
+}
+.breadcrumb-nav .breadcrumb-item:not(.active) a {
+  color: #AAACAE;
+}
+.breadcrumb-nav .breadcrumb-item.active {
+  color: #000000;
+}
+.breadcrumb-nav .breadcrumb-item + .breadcrumb-item::before {
+  position: absolute;
+  top: 0;
+  margin: auto;
+  bottom: 0;
+  content: "";
+  width: 8px;
+  height: 8px;
+  background: #0B83FD;
+  border-radius: 100%;
+  inset-inline-start: -0.75rem;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+/*-----------------------
+    banner
+-------------------------*/
+.banner-section {
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-size: cover !important;
+  border-radius: 16px;
+  min-height: 150px;
+}
+.banner-section h2 {
+  text-transform: capitalize;
+  font-family: "ReemKufi-SemiBold";
+}
+@media (min-width: 768px) {
+  .banner-section h2 {
+    font-size: 50px;
+  }
+}
+.banner-section h3 {
+  font-family: "ReemKufi-SemiBold";
+}
+@media (min-width: 768px) {
+  .banner-section h3 {
+    font-size: 50px;
+  }
+}
+.banner-section p {
+  text-transform: capitalize;
+  font-size: 18px;
+  font-family: "ReemKufi-Medium";
+}
+
+/*-----------------------
+    main-product-section
+-------------------------*/
+.swiper-slide .main-product-section-card {
+  opacity: 0.7;
+}
+.swiper-slide.swiper-slide-active .main-product-section-card, .swiper-slide.active .main-product-section-card {
+  opacity: 1;
+}
+.swiper-slide .main-product-section-card {
+  width: 100%;
+  min-height: 100px;
+  overflow: hidden;
+  padding: 8px;
+  border-radius: 55px;
+}
+.swiper-slide .main-product-section-card .item {
+  padding: 12px;
+  width: 100%;
+  border-radius: 55px;
+}
+.swiper-slide .main-product-section-card .item img {
+  height: 48px;
+}
+.swiper-slide .main-product-section-card .item p {
+  font-size: 18px;
+}
+.swiper-slide:nth-child(odd) .main-product-section-card {
+  border: 1px solid #F0C4C1;
+}
+.swiper-slide:nth-child(odd) .main-product-section-card .item {
+  background: rgba(240, 227, 193, 0.1);
+}
+.swiper-slide:nth-child(even) .main-product-section-card {
+  border: 1px solid #C5EBFE;
+}
+.swiper-slide:nth-child(even) .main-product-section-card .item {
+  background: rgba(197, 235, 254, 0.1);
+}
+
+/*-----------------------
+    sub-product
+-------------------------*/
+.sub-product-title {
+  text-transform: capitalize;
+  font-size: 32px;
+  padding: 0;
+}
+
+.sub-product-card {
+  padding: 16px;
+  border-radius: 30px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  margin-top: 70px;
+}
+.sub-product-card .card-header {
+  margin-top: -70px;
+}
+.sub-product-card .card-header img {
+  height: 150px;
+}
+.sub-product-card .card-body {
+  min-height: 160px;
+}
+.sub-product-card .card-body h4 {
+  color: #3D3D3D;
+  font-size: 24px;
+  font-family: "ReemKufi-Medium";
+}
+@media (min-width: 768px) {
+  .sub-product-card .card-body h4 {
+    padding-inline-end: 15%;
+    display: -webkit-box;
+    line-clamp: 2;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+.sub-product-card .card-body p {
+  color: #3D3D3D;
+  font-size: 14px;
+  display: -webkit-box;
+  line-clamp: 4;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.sub-product-card .card-footer li .rate {
+  color: #3D3D3D;
+  font-size: 24px;
+}
+.sub-product-card .card-footer li .qr-span {
+  font-size: 18px;
+  color: #070A13;
+  font-family: "ReemKufi-Medium";
+}
+.sub-product-card .card-footer li .add-to-card {
+  min-inline-size: 30px;
+  max-inline-size: 30px;
+  inline-size: 30px;
+  block-size: 30px;
+  border-radius: 100%;
+  background: #0B83FD;
+}
+
+.sidebar {
+  transition: all 0.3s ease;
+}
+
+.content {
+  transition: all 0.3s ease;
+}
+
+.sidebar.d-none {
+  transition: all 0.3s ease;
+}
+
+/*-----------------------
+    chat-ai-card
+-------------------------*/
+@media (min-width: 768px) {
+  .chat-ai-card {
+    position: fixed;
+    bottom: 0;
+    flex: 0 0 auto;
+    width: 32.33333333%;
+  }
+}
+@media (min-width: 500px) and (max-width: 768px) {
+  .chat-ai-card {
+    width: 100%;
+  }
+  .chat-ai-card .chat-ai {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+  }
+}
+@media (max-width: 499.98px) {
+  .chat-ai-card {
+    width: 100%;
+  }
+  .chat-ai-card .chat-ai {
+    width: 100%;
+  }
+}
+.chat-ai-card .btn-speak {
+  background: rgba(160, 142, 94, 0.8);
+  min-height: 48px;
+  padding: 0 1.25rem;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0 auto;
+  color: #fff;
+  font-size: 24px;
+  text-transform: capitalize;
+  position: absolute;
+  bottom: 16px;
+  right: 0;
+  left: 0;
+}
+
+/*-----------------------
+    chat-ai-card
+-------------------------*/
+.extra-meals-card {
+  height: 200px;
+  border-radius: 16px;
+}
+.extra-meals-card img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.extra-meals-card::after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.45);
+  width: 100%;
+  height: 100%;
+}
+.extra-meals-card .extra-meals-text {
+  position: absolute;
+  text-transform: capitalize;
+  top: 16px;
+  left: 16px;
+  z-index: 11;
+  color: #fff;
+  font-size: 35px;
+  font-family: "ReemKufi-SemiBold";
+}
+
+/*-----------------------
+    offcanvas
+-------------------------*/
+.offcanvas {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border: 1px solid #fff;
+  border-radius: 24px 0 0 24px;
+  --bs-offcanvas-width: 280px;
+  top: 16px !important;
+  bottom: 16px;
+  padding-top: 1rem;
+}
+.offcanvas .counter input {
+  color: #070A13;
+  font-size: 35px;
+  outline: 0 !important;
+  border-color: transparent !important;
+  font-family: "ReemKufi-Medium";
+}
+.offcanvas .counter .counter__decrement,
+.offcanvas .counter .counter__increment {
+  min-inline-size: 60px;
+  max-inline-size: 60px;
+  inline-size: 60px;
+  block-size: 60px;
+  border-radius: 100%;
+  color: #fff;
+  background: linear-gradient(90deg, #0EB0FF 0%, #0B83FD 100%);
+}
+.offcanvas .card-total-price {
+  border: 1px solid #C5EBFE;
+  border-radius: 20px;
+  padding: 0.5rem 1rem;
+}
+.offcanvas .card-total-price .name {
+  color: #585858;
+}
+.offcanvas .card-total-price .value {
+  font-size: 14px;
+  color: #3B3A3A;
+  font-family: "ReemKufi-Medium";
+}
+.offcanvas textarea.form-control {
+  resize: unset !important;
+  border: 1px solid #C5EBFE;
+  border-radius: 20px;
+  outline: unset !important;
+  box-shadow: none !important;
+}
+.offcanvas textarea.form-control::-moz-placeholder {
+  font-size: 13px;
+}
+.offcanvas textarea.form-control::placeholder {
+  font-size: 13px;
+}
+.offcanvas textarea.form-control::-ms-input-placeholder {
+  font-size: 13px;
+}
+.offcanvas .card-product-style {
+  padding: 16px;
+  border-radius: 24px;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.offcanvas .card-product-style .prouct-image {
+  width: 50px;
+}
+.offcanvas .card-product-style .text {
+  width: calc(100% - 55px);
+}
+.offcanvas .card-product-style .text h6 {
+  font-size: 18px;
+  color: #070A13;
+  display: -webkit-box;
+  line-clamp: 1;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: "ReemKufi-Medium";
+}
+.offcanvas .card-product-style .text span {
+  font-size: 14px;
+  color: #272A49;
+  font-family: "ReemKufi-Medium";
+}
+.offcanvas .card-product-style .text input {
+  width: 16px;
+  color: #070A13;
+  font-size: 12px;
+  outline: 0 !important;
+  border-color: transparent !important;
+  font-family: "ReemKufi-Medium";
+}
+.offcanvas .card-product-style .text .counter__decrement,
+.offcanvas .card-product-style .text .counter__increment {
+  min-inline-size: 18px;
+  max-inline-size: 18px;
+  inline-size: 18px;
+  block-size: 18px;
+  border-radius: 100%;
+  color: #fff;
+  background: linear-gradient(90deg, #0EB0FF 0%, #0B83FD 100%);
+}
+
+.offcanvas-backdrop {
+  background-color: transparent;
+  opacity: 1 !important;
+}
+
+.offcanvas-header p {
+  font-size: 32px;
+  text-transform: capitalize;
+}
+.offcanvas-header .main-product {
+  height: 175px;
+  border-radius: 20px;
+}
+.offcanvas-header .main-product img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.offcanvas-header .details h4 {
+  color: #070A13;
+  font-size: 24px;
+  font-family: "ReemKufi-Medium";
+}
+.offcanvas-header .details ul li {
+  font-size: 18px;
+  font-family: "ReemKufi-Medium";
+  color: #272A49;
+}
+.offcanvas-header .details ul span {
+  font-size: 18px;
+  color: #3D3D3D;
+}
+.offcanvas-header .details p {
+  font-size: 13px;
+  color: #989DA3;
+  font-weight: normal;
+}
+
+.offcanvas-footer .btn-pay {
+  font-size: 28px;
+  color: #fff;
+  min-height: 48px;
+  border-radius: 15px;
+  background: linear-gradient(90deg, #0EB0FF 0%, #0B83FD 100%);
+  border: 1px solid #fff;
+  font-family: "ReemKufi-SemiBold";
+}
+
+.form-label {
+  color: #585858;
+  font-size: 16px;
+}
+
+/*-----------------------
+    modal
+-------------------------*/
+.modal .btn-close {
+  width: 24px;
+  height: 24px;
+  background: #ECECEC;
+  color: #000;
+  opacity: 1;
+  border-radius: 100%;
+  font-size: 19px;
+  outline: none !important;
+  box-shadow: none !important;
+}
+@media (max-width: 991.98px) {
+  .modal .btn-close {
+    position: absolute;
+    top: 16px;
+    inset-inline-end: 16px;
+  }
+}
+.modal .modal-body {
+  padding-block: 24px;
+}
+@media (min-width: 992px) {
+  .modal .modal-body .image-part {
+    width: 310px;
+  }
+}
+@media (max-width: 991.98px) {
+  .modal .modal-body .image-part {
+    width: 100%;
+  }
+}
+.modal .modal-body .image-part img {
+  border-radius: 24px;
+  width: 100%;
+  height: 268px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.modal .modal-body .main-title-part h3 {
+  color: #3D3D3D;
+  font-size: 24px;
+  font-family: "ReemKufi-Medium";
+  width: calc(100% - 30px);
+}
+.modal .modal-body p {
+  color: #3D3D3D;
+}
+.modal .modal-body .price {
+  font-size: 24px;
+  color: #f13035;
+  font-family: "ReemKufi-SemiBold";
+}
+.modal .modal-body .form-control {
+  resize: unset;
+}
+.modal .modal-body .counter__decrement,
+.modal .modal-body .counter__increment {
+  min-inline-size: 30px;
+  max-inline-size: 30px;
+  inline-size: 30px;
+  block-size: 30px;
+  border-radius: 100%;
+  color: #fff;
+  background: #fff;
+  border: 1px solid #eee;
+}
+.modal .modal-body .counter__decrement img,
+.modal .modal-body .counter__increment img {
+  filter: brightness(0) saturate(100%) invert(0%) sepia(96%) saturate(14%) hue-rotate(273deg) brightness(99%) contrast(104%);
+}
+.modal .modal-body input {
+  width: 32px;
+  color: #070A13;
+  font-size: 12px;
+  outline: 0 !important;
+  border-color: transparent !important;
+  font-family: "ReemKufi-Medium";
+}
+.modal .modal-footer {
+  padding: 6px 16px;
+}
+.modal .modal-footer .btn {
+  min-height: 45px;
+  border-radius: 12px;
+  background: #f13035;
+  border: 1px solid #fff;
+  font-size: 18px;
+  font-family: "ReemKufi-Medium";
+}/*# sourceMappingURL=style.css.map */
