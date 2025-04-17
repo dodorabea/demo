@@ -1,0 +1,694 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>AJWAN</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- favicon -->
+    <link rel="apple-touch-icon" href="assets/image/fav.png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/image/fav.png">
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Swiper Slider css -->
+    <link rel="stylesheet" type="text/css" href="assets/swiper/css/swiper-bundle.min.css">
+    <!-- style css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body class="scrollby-body" data-bs-spy="scroll" data-bs-offset="15" data-bs-target="#myScrollspy">
+    <div class="container-fluid">
+        <header>
+            <nav class="navbar">
+                <a class="navbar-brand p-0 m-0">
+                    <img width="100px" src="assets/image/logo/logo.jpg" alt="logo" />
+                </a>
+                <div class="header-action-list">
+                    <ul class="d-flex align-items-center column-gap-2 row-gap-2">
+                        <li class="menu-action">
+                            <a id="toggleBtn" class="icon d-flex align-items-center justify-content-center">
+                                <img width="24px" src="assets/image/icon/menu.svg" alt="icon" />
+                            </a>
+                        </li>
+                        <li class="home-action">
+                            <a href="#" class="icon d-flex align-items-center justify-content-center">
+                                <img width="30px" src="assets/image/icon/home.svg" alt="icon" />
+                            </a>
+                        </li>
+                        <li class="cart-action">
+                            <a data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                                aria-controls="offcanvasExample"
+                                class="icon position-relative d-flex align-items-center justify-content-center">
+                                <img width="28px" src="assets/image/icon/cart.svg" alt="icon" />
+                                <span
+                                    class="position-absolute top-0 start-100 translate-middle badge bg-primary border  border-light">4</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <div class="row row-gap-3">
+            <div id="leftSidebar" class="col-lg-4 col-md-4 sidebar position-relative">
+                <div class="chat-ai-card" id="myScrollspy">
+                    <img class="img-fluid chat-ai" src="assets/image/chat/ai-chat.png" alt="AI-chat" />
+                    <button class="btn btn-speak d-flex align-items-center justify-content-center gap-2">
+                        <img width="24px" src="assets/image/icon/mic.svg" alt="mic">
+                        <span>speak</span>
+                    </button>
+                </div>
+
+            </div>
+
+            <main id="rightContent" class="col-lg-8 col-md-8 content">
+                <!-- ============================================================== -->
+                <!-- breadcrumb -->
+                <!-- ============================================================== -->
+                <nav class="breadcrumb-nav pt-3" aria-label="breadcrumb">
+                    <ol class="breadcrumb gap-4">
+                        <li class="breadcrumb-item position-relative"><a href="#">Store</a></li>
+                        <li class="breadcrumb-item position-relative active" aria-current="page">Fire Fresh</li>
+                    </ol>
+                </nav>
+                <!-- ============================================================== -->
+                <!-- Main Product -->
+                <!-- ============================================================== -->
+                <section class="banner-section overflow-hidden d-flex align-items-center my-3 px-4 text-white"
+                    style="background: url(assets/image/product/banner.png);">
+                    <div class="container">
+                        <div class="row align-items-center row-gap-3 w-100">
+                            <div class="col-lg-6 col-md-6">
+                                <h2>fire fresh</h2>
+                                <p>fresh & healthy food</p>
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                                <ul
+                                    class="d-flex align-items-center justify-content-end flex-wrap row-gap-3 column-gap-4">
+                                    <li>
+                                        <div class="item">
+                                            <h3>45</h3>
+                                            <p>Total Items</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="item">
+                                            <h3>16</h3>
+                                            <p>category</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- ============================================================== -->
+                <!-- Main Product -->
+                <!-- ============================================================== -->
+                <section class="main-product-section py-3">
+                    <div class="container">
+                        <div class="row row-gap-3">
+                            <!-- Swiper -->
+                            <div class="swiper mySwiper main-pro">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide d-flex align-items-center justify-content-center">
+                                        <div
+                                            class="main-product-section-card active d-flex flex-column align-items-center justify-content-center">
+                                            <div
+                                                class="item d-flex flex-column row-gap-2 align-items-center justify-content-center">
+                                                <img src="assets/image/product/pizza.png" alt="icon" />
+                                                <p>pizza</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!---->
+                                    <div class="swiper-slide d-flex align-items-center justify-content-center">
+                                        <div
+                                            class="main-product-section-card d-flex flex-column align-items-center justify-content-center">
+                                            <div
+                                                class="item d-flex flex-column row-gap-2 align-items-center justify-content-center">
+                                                <img src="assets/image/product/Burger.png" alt="icon" />
+                                                <p>burger</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!---->
+                                    <div class="swiper-slide d-flex align-items-center justify-content-center">
+                                        <div
+                                            class="main-product-section-card d-flex flex-column align-items-center justify-content-center">
+                                            <div
+                                                class="item d-flex flex-column row-gap-2 align-items-center justify-content-center">
+                                                <img src="assets/image/product/Sausage.png" alt="icon" />
+                                                <p>Sausage</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!---->
+                                    <div class="swiper-slide active d-flex align-items-center justify-content-center">
+                                        <div
+                                            class="main-product-section-card d-flex flex-column align-items-center justify-content-center">
+                                            <div
+                                                class="item d-flex flex-column row-gap-2 align-items-center justify-content-center">
+                                                <img src="assets/image/product/Samosa.png" alt="icon" />
+                                                <p>Samosa</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!---->
+                                    <div class="swiper-slide d-flex align-items-center justify-content-center">
+                                        <div
+                                            class="main-product-section-card d-flex flex-column align-items-center justify-content-center">
+                                            <div
+                                                class="item d-flex flex-column row-gap-2 align-items-center justify-content-center">
+                                                <img src="assets/image/product/Drinks.png" alt="icon" />
+                                                <p>Drinks</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!---->
+                                    <div class="swiper-slide d-flex align-items-center justify-content-center">
+                                        <div
+                                            class="main-product-section-card d-flex flex-column align-items-center justify-content-center">
+                                            <div
+                                                class="item d-flex flex-column row-gap-2 align-items-center justify-content-center">
+                                                <img src="assets/image/product/Desserts.png" alt="icon" />
+                                                <p>Desserts</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!---->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- ============================================================== -->
+                <!-- Sub Product -->
+                <!-- ============================================================== -->
+                <section class="sub-product py-5">
+                    <div class="container">
+                        <div class="row">
+                            <h3 class="sub-product-title mb-1 px-1">burger</h3>
+                        </div>
+                        <div class="row row-gap-3">
+                            <div class="swiper mySwiper sub-pro py-4 px-1">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="sub-product-card">
+                                            <div class="card-header d-flex align-items-center justify-content-center">
+                                                <img class="img-fluid" src="assets/image/product/burger1.png"
+                                                    alt="image" />
+                                            </div>
+                                            <div class="card-body d-flex flex-column row-gap-3">
+                                                <h4>The Jalapeno Popper Show</h4>
+                                                <p>The Jalapeno Popper Show is a Mexican Chicken Burger topped with
+                                                    jalapeno-infused
+                                                    cream cheese.</p>
+                                            </div>
+                                            <div class="card-footer mt-4">
+                                                <ul
+                                                    class="d-flex flex-wrap align-items-center row-gap-3 column-gap-3 justify-content-between">
+                                                    <li class="d-flex align-items-center gap-1">
+                                                        <img src="assets/image/icon/Star.svg" alt="icon">
+                                                        <span class="rate">4.4</span>
+                                                    </li>
+                                                    <li class="d-flex align-items-center gap-1">
+                                                        <span class="qr-span">169.99 QR</span>
+                                                        <a data-bs-toggle="modal" data-bs-target="#cartModal"
+                                                            class="add-to-card d-flex align-items-center justify-content-center">
+                                                            <img width="14px" src="assets/image/icon/plus.svg"
+                                                                alt="icon">
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="sub-product-card">
+                                            <div class="card-header d-flex align-items-center justify-content-center">
+                                                <img class="img-fluid" src="assets/image/product/burger2.png"
+                                                    alt="image" />
+                                            </div>
+                                            <div class="card-body d-flex flex-column row-gap-3">
+                                                <h4>The Mamma Mia</h4>
+                                                <p>The Mamma Mia is topped with melted Cheddar Cheese, smoked Chicken
+                                                    and our homemade
+                                                    Chinese BBQ sauce.</p>
+                                            </div>
+                                            <div class="card-footer mt-4">
+                                                <ul
+                                                    class="d-flex flex-wrap align-items-center row-gap-3 column-gap-3 justify-content-between">
+                                                    <li class="d-flex align-items-center gap-1">
+                                                        <img src="assets/image/icon/Star.svg" alt="icon">
+                                                        <span class="rate">4.4</span>
+                                                    </li>
+                                                    <li class="d-flex align-items-center gap-1">
+                                                        <span class="qr-span">169.99 QR</span>
+                                                        <a href="#"
+                                                            class="add-to-card d-flex align-items-center justify-content-center">
+                                                            <img width="14px" src="assets/image/icon/plus.svg"
+                                                                alt="icon">
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="sub-product-card">
+                                            <div class="card-header d-flex align-items-center justify-content-center">
+                                                <img class="img-fluid" src="assets/image/product/burger3.png"
+                                                    alt="image" />
+                                            </div>
+                                            <div class="card-body d-flex flex-column row-gap-3">
+                                                <h4>The Isabella</h4>
+                                                <p>The Isabella is a Chicken Burger topped with Black truffle Cheese and
+                                                    truffle-infused
+                                                    mushrooms.</p>
+                                            </div>
+                                            <div class="card-footer mt-4">
+                                                <ul
+                                                    class="d-flex flex-wrap align-items-center row-gap-3 column-gap-3 justify-content-between">
+                                                    <li class="d-flex align-items-center gap-1">
+                                                        <img src="assets/image/icon/Star.svg" alt="icon">
+                                                        <span class="rate">4.4</span>
+                                                    </li>
+                                                    <li class="d-flex align-items-center gap-1">
+                                                        <span class="qr-span">169.99 QR</span>
+                                                        <a href="#"
+                                                            class="add-to-card d-flex align-items-center justify-content-center">
+                                                            <img width="14px" src="assets/image/icon/plus.svg"
+                                                                alt="icon">
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="sub-product-card">
+                                            <div class="card-header d-flex align-items-center justify-content-center">
+                                                <img class="img-fluid" src="assets/image/product/burger1.png"
+                                                    alt="image" />
+                                            </div>
+                                            <div class="card-body d-flex flex-column row-gap-3">
+                                                <h4>The Brooklyn</h4>
+                                                <p>The Brooklyn is smoothered in melted Swiss Cheese and yellow Onion
+                                                </p>
+                                            </div>
+                                            <div class="card-footer mt-4">
+                                                <ul
+                                                    class="d-flex flex-wrap align-items-center row-gap-3 column-gap-3 justify-content-between">
+                                                    <li class="d-flex align-items-center gap-1">
+                                                        <img src="assets/image/icon/Star.svg" alt="icon">
+                                                        <span class="rate">4.4</span>
+                                                    </li>
+                                                    <li class="d-flex align-items-center gap-1">
+                                                        <span class="qr-span">169.99 QR</span>
+                                                        <a href="#"
+                                                            class="add-to-card d-flex align-items-center justify-content-center">
+                                                            <img width="14px" src="assets/image/icon/plus.svg"
+                                                                alt="icon">
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- ============================================================== -->
+                <!-- extra-meals -->
+                <!-- ============================================================== -->
+                <section class="extra-meals py-3">
+                    <div class="container">
+                        <div class="row row-gap-2 gx-2">
+                            <div class="col-lg-4 col-md-6">
+                                <div class="extra-meals-card overflow-hidden position-relative">
+                                    <img class="img-fluid w-100 h-100" src="assets/image/product/brand.png"
+                                        alt="image" />
+                                    <p class="extra-meals-text">rolls</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="extra-meals-card overflow-hidden position-relative">
+                                    <img class="img-fluid w-100 h-100" src="assets/image/product/Brand1.png"
+                                        alt="image" />
+                                    <p class="extra-meals-text">Noodles</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="extra-meals-card overflow-hidden position-relative">
+                                    <img class="img-fluid w-100 h-100" src="assets/image/product/burger2.png"
+                                        alt="image" />
+                                    <p class="extra-meals-text">Fried</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="extra-meals-card overflow-hidden position-relative">
+                                    <img class="img-fluid w-100 h-100" src="assets/image/product/Brand3.png"
+                                        alt="image" />
+                                    <p class="extra-meals-text">Appetizers</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="extra-meals-card overflow-hidden position-relative">
+                                    <img class="img-fluid w-100 h-100" src="assets/image/product/Brand4.png"
+                                        alt="image" />
+                                    <p class="extra-meals-text">Salads</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="extra-meals-card overflow-hidden position-relative">
+                                    <img class="img-fluid w-100 h-100" src="assets/image/product/Brand1.png"
+                                        alt="image" />
+                                    <p class="extra-meals-text">Soups</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="extra-meals-card overflow-hidden position-relative">
+                                    <img class="img-fluid w-100 h-100" src="assets/image/product/burger2.png"
+                                        alt="image" />
+                                    <p class="extra-meals-text">Wok Tossed</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="extra-meals-card overflow-hidden position-relative">
+                                    <img class="img-fluid w-100 h-100" src="assets/image/product/brand.png"
+                                        alt="image" />
+                                    <p class="extra-meals-text">Beverages</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="extra-meals-card overflow-hidden position-relative">
+                                    <img class="img-fluid w-100 h-100" src="assets/image/product/Brand3.png"
+                                        alt="image" />
+                                    <p class="extra-meals-text">Main Dishes</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- ============================================================== -->
+                <!-- offcanvas -->
+                <!-- ============================================================== -->
+                <div class="offcanvas offcanvas-end d-flex flex-column" tabindex="-1" id="offcanvasExample"
+                    aria-labelledby="offcanvasExampleLabel">
+
+                    <div class="offcanvas-body pt-0">
+                        <div class="offcanvas-header flex-column p-0 mb-3">
+                            <div
+                                class="option-icon d-flex flex-column row-gap-2 text-center align-items-center justify-content-center">
+                                <span class="icon d-flex align-items-center justify-content-center">
+                                    <img width="30px" src="assets/image/icon/Edit.svg" alt="icon">
+                                </span>
+                                <p>Your Cart</p>
+                            </div>
+                            <!---->
+                            <div class="d-flex flex-column row-gap-3">
+                                <div class="main-product overflow-hidden">
+                                    <img class="img-fluid w-100 h-100" src="assets/image/product/Brand1.png"
+                                        alt="image">
+                                </div>
+                                <!---->
+                                <div class="details d-flex flex-column row-gap-2">
+                                    <h4>Dynamite Shrimp</h4>
+                                    <ul
+                                        class="d-flex flex-wrap align-items-center justify-content-between column-gap-2 row-gap-2">
+                                        <li>
+                                            158.98 QR
+                                        </li>
+                                        <li class="d-flex flex-wrap align-items-center gap-1">
+                                            <img width="14px" src="assets/image/icon/Star.svg" alt="icon" />
+                                            <span>4.8</span>
+                                        </li>
+                                    </ul>
+                                    <p>
+                                        Unlock the power of seamless design with my 5 free screens straight from my
+                                        Premium UI Kit. Crafted with precision and attention to detail, each screen is
+                                        designed to elevate your projects effortlessly. With auto-layout built-in,
+                                        customization is a breeze, allowing you to create stunning designed to elevate
+                                        your projects auto-layout no time.
+                                    </p>
+                                    <!---->
+                                    <div>
+                                        <label class="form-label">Special Instructions</label>
+                                        <textarea class="form-control" placeholder="Add any special requests here..."
+                                            rows="4"></textarea>
+                                    </div>
+                                    <!---->
+                                </div>
+                            </div>
+                        </div>
+                        <!---->
+                        <div class="d-flex flex-column row-gap-3">
+                            <div class="card-product-style">
+                                <div class="d-flex flex-wrap w-100">
+                                    <img class="prouct-image" src="assets/image/product/burger2.png" alt="image">
+                                    <div class="text">
+                                        <h6>The Brooklyn</h6>
+                                        <div class="d-flex flex-wrap justify-content-between gap-1 row-gap-1">
+                                            <span class="d-block">359.98 QR</span>
+                                            <div class="counter-card-product d-flex align-items-center gap-1">
+                                                <a
+                                                    class="counter__decrement d-flex align-items-center justify-content-center">
+                                                    <img width="8px" src="assets/image/icon/minus.svg" alt="icon">
+                                                </a>
+                                                <input class="counter__input border-0 text-center" type="text" value="1"
+                                                    name="counter" size="5" readonly="readonly" />
+                                                <a
+                                                    class="counter__increment d-flex align-items-center justify-content-center">
+                                                    <img width="8px" src="assets/image/icon/plus.svg" alt="icon">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!---->
+                            <div class="card-product-style">
+                                <div class="d-flex flex-wrap w-100">
+                                    <img class="prouct-image" src="assets/image/product/burger2.png" alt="image">
+                                    <div class="text">
+                                        <h6>The Brooklyn</h6>
+                                        <div class="d-flex flex-wrap justify-content-between gap-1 row-gap-1">
+                                            <span class="d-block">359.98 QR</span>
+                                            <div class="counter-card-product d-flex align-items-center gap-1">
+                                                <a
+                                                    class="counter__decrement d-flex align-items-center justify-content-center">
+                                                    <img width="8px" src="assets/image/icon/minus.svg" alt="icon">
+                                                </a>
+                                                <input class="counter__input border-0 text-center" type="text" value="1"
+                                                    name="counter" size="5" readonly="readonly" />
+                                                <a
+                                                    class="counter__increment d-flex align-items-center justify-content-center">
+                                                    <img width="8px" src="assets/image/icon/plus.svg" alt="icon">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!---->
+                            <div class="card-product-style">
+                                <div class="d-flex flex-wrap w-100">
+                                    <img class="prouct-image" src="assets/image/product/burger2.png" alt="image">
+                                    <div class="text">
+                                        <h6>The Brooklyn</h6>
+                                        <div class="d-flex flex-wrap justify-content-between gap-1 row-gap-1">
+                                            <span class="d-block">359.98 QR</span>
+                                            <div class="counter-card-product d-flex align-items-center gap-1">
+                                                <a
+                                                    class="counter__decrement d-flex align-items-center justify-content-center">
+                                                    <img width="8px" src="assets/image/icon/minus.svg" alt="icon">
+                                                </a>
+                                                <input class="counter__input border-0 text-center" type="text" value="1"
+                                                    name="counter" size="5" readonly="readonly" />
+                                                <a
+                                                    class="counter__increment d-flex align-items-center justify-content-center">
+                                                    <img width="8px" src="assets/image/icon/plus.svg" alt="icon">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!---->
+                            <div class="card-total-price">
+                                <ul class="d-flex flex-column row-gap-1">
+                                    <li
+                                        class="d-flex flex-wrap align-items-center justify-content-between column-gap-2 row-gap-2">
+                                        <span class="name">Subtotal</span>
+                                        <span class="value">
+                                            QR 948.93
+                                        </span>
+                                    </li>
+                                    <li
+                                        class="d-flex flex-wrap align-items-center justify-content-between column-gap-2 row-gap-2">
+                                        <span class="name">Tax</span>
+                                        <span class="value">
+                                            QR 94.89
+                                        </span>
+                                    </li>
+                                    <li
+                                        class="d-flex flex-wrap align-items-center justify-content-between column-gap-2 row-gap-2">
+                                        <span class="name">Total</span>
+                                        <span class="value">
+                                            QR 1043.82
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!---->
+                        </div>
+                    </div>
+                    <div class="offcanvas-footer d-flex flex-column row-gap-3 py-3 px-3">
+                        <div class="counter d-flex align-items-center justify-content-between">
+                            <a class="counter__decrement d-flex align-items-center justify-content-center">
+                                <img width="16px" src="assets/image/icon/minus.svg" alt="icon">
+                            </a>
+                            <input class="counter__input border-0 text-center" type="text" value="1" name="counter"
+                                size="5" readonly="readonly" />
+                            <a class="counter__increment d-flex align-items-center justify-content-center">
+                                <img width="16px" src="assets/image/icon/plus.svg" alt="icon">
+                            </a>
+                        </div>
+                        <button class="btn btn-pay w-100 d-flex align-items-center justify-content-center">Pay!</button>
+                    </div>
+                </div>
+                <!-- ============================================================== -->
+                <!-- Modal -->
+                <!-- ============================================================== -->
+                <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered  modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <div class="d-flex flex-wrap justify-content-between row-gap-3 column-gap-3">
+                                    <div class="image-part overflow-hidden">
+                                        <img  src="assets/image/product/Brand2.png" alt="image"/>
+                                    </div>
+                                    <div class="text-part d-flex flex-column row-gap-3">
+                                        <div class="main-title-part d-flex justify-content-between">
+                                            <h3>Chef's Special Shrimp</h3>
+                                            <button type="button" class="btn-close d-flex align-items-center justify-content-center" data-bs-dismiss="modal" aria-label="Close">x</button>
+                                        </div>
+                                        <p>Crispy shrimp served with iceberg lettuce and our special sauce.</p>
+                                        <span class="price">4.100KWD</span>
+                                        <div>
+                                            <span class="d-block mb-3">Quantity</span>
+                                            <div class="counter-card-product d-flex align-items-center gap-1">
+                                                <a
+                                                    class="counter__decrement d-flex align-items-center justify-content-center">
+                                                    <img width="10px" src="assets/image/icon/minus.svg" alt="icon">
+                                                </a>
+                                                <input class="counter__input border-0 text-center" type="text" value="1"
+                                                    name="counter" size="5" readonly="readonly" />
+                                                <a
+                                                    class="counter__increment d-flex align-items-center justify-content-center">
+                                                    <img width="10px" src="assets/image/icon/plus.svg" alt="icon">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <label class="form-label">Special Instructions</label>
+                                            <textarea class="form-control" placeholder="Add any special requests here..." rows="3"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer border-top">
+                                <button type="button" class="btn btn-secondary d-flex align-items-center justify-content-center w-100">
+                                    Add to Cart - 4.100KWD
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="assets/swiper/js/swiper.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper.main-pro", {
+            slidesPerView: 6,
+            spaceBetween: 10,
+            breakpoints: {
+                0: {
+                    slidesPerView: 1.5,
+                },
+                400: {
+                    slidesPerView: 2.5,
+                },
+                880: {
+                    slidesPerView: 3.5,
+                },
+                1025: {
+                    slidesPerView: 4.5,
+                },
+                1366: {
+                    slidesPerView: 5,
+                },
+            },
+        });
+    </script>
+    <script>
+        var swiper = new Swiper(".mySwiper.sub-pro", {
+            slidesPerView: 1,
+            spaceBetween: 16,
+            breakpoints: {
+                0: {
+                    slidesPerView: 1,
+                },
+                400: {
+                    slidesPerView: 1.25,
+                },
+                880: {
+                    slidesPerView: 2.25,
+                },
+                1340: {
+                    slidesPerView: 3.25,
+                },
+                1440: {
+                    slidesPerView: 3.5,
+                },
+            },
+
+        });
+    </script>
+    <script>
+        const toggleBtn = document.getElementById('toggleBtn');
+        const leftSidebar = document.getElementById('leftSidebar');
+        const rightContent = document.getElementById('rightContent');
+
+        toggleBtn.addEventListener('click', () => {
+            const isHidden = leftSidebar.classList.contains('d-none');
+
+            if (isHidden) {
+                leftSidebar.classList.remove('d-none');
+                setTimeout(() => {
+                    rightContent.classList.remove('col-12');
+                    rightContent.classList.add('col-lg-8');
+                }, 300); // wait for sidebar animation to finish
+            } else {
+                leftSidebar.classList.add('d-none');
+                setTimeout(() => {
+                    rightContent.classList.remove('col-lg-8');
+                    rightContent.classList.add('col-12');
+                }, 300); // match transition duration
+            }
+        });
+    </script>
+
+</body>
+
+</html>
