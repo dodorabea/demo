@@ -1,7 +1,8 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-    
+
     <title>AJWAN</title>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
@@ -17,8 +18,9 @@
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
-<body class="scrollby-body" data-bs-spy="scroll" data-bs-offset="15" data-bs-target="#myScrollspy">
+<body class="scrollby-body">
     <div class="container-fluid">
+        
         <header>
             <nav class="navbar">
                 <a class="navbar-brand p-0 m-0">
@@ -26,6 +28,11 @@
                 </a>
                 <div class="header-action-list">
                     <ul class="d-flex align-items-center column-gap-2 row-gap-2">
+                        <li class="chat-action">
+                            <a class="icon d-flex align-items-center justify-content-center"  data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                <img width="24px" src="assets/image/icon/chat.svg" alt="icon" />
+                            </a>
+                        </li>
                         <li class="menu-action">
                             <a id="toggleBtn" class="icon d-flex align-items-center justify-content-center">
                                 <img width="24px" src="assets/image/icon/menu.svg" alt="icon" />
@@ -45,20 +52,69 @@
                                     class="position-absolute top-0 start-100 translate-middle badge bg-primary border  border-light">4</span>
                             </a>
                         </li>
+                        
                     </ul>
                 </div>
             </nav>
         </header>
+       
+
+
         <div class="row row-gap-3">
             <div id="leftSidebar" class="col-lg-4 col-md-4 sidebar position-relative">
-                <div class="chat-ai-card" id="myScrollspy">
+                <div class="chat-ai-card">
                     <img class="img-fluid chat-ai" src="assets/image/chat/ai-chat.png" alt="AI-chat" />
-                    <button class="btn btn-speak d-flex align-items-center justify-content-center gap-2">
-                        <img width="24px" src="assets/image/icon/mic.svg" alt="mic">
-                        <span>speak</span>
-                    </button>
+                    <div class="collapse" id="collapseExample">
+                        <div class="chat-card py-4 position-relative">
+                            <div class="card-header px-3">
+                                <h5 class="text-center mb-2">Meet Jara</h5>
+                            </div>
+                            <div class="card-body py-3 px-3 d-flex flex-column">
+                                <div class="mb-3 d-flex align-items-start gap-2 justify-content-end">
+                                    <div class="chat-bubble chat-right">Hello My Jara, how are you today?</div>
+                                </div>
+                                <!--Human-->
+                                <div class="mb-3 d-flex align-items-start gap-2">
+                                    <div class="avatar d-flex align-items-center justify-content-center">
+                                        <img width="40px" src="assets/image/icon/woman.svg" alt="icon" />
+                                    </div>
+                                    <div class="chat-bubble chat-left">Hello, I’mfine, how can i help you?</div>
+                                </div>
+                                <!--Root-->
+                                <div class="mb-3 d-flex align-items-start gap-2 justify-content-end">
+                                    <div class="chat-bubble chat-right">
+                                        Hi, can you make a title and description about the UI&UX digital agency design
+                                    </div>
+                                </div>
+                                <!--Human-->
+                                <div class="mb-3 d-flex align-items-start gap-2">
+                                    <div class="avatar d-flex align-items-center justify-content-center">
+                                        <img width="40px" src="assets/image/icon/woman.svg" alt="icon" />
+                                    </div>
+                                    <div class="chat-bubble chat-left">
+                                        Title: Crafting Delightful Digital Experiences: UI/UX Design Agency
+                                        Description: Our UI/UX design agency specializes in creating visually stunning and intuitive
+                                        user interfaces for websites, mobile apps, and other digital platforms. We work closely with our
+                                        clients to understand their brand and target audience, and use our expertise to create engaging
+                                        digital experiences that keep users coming back for more.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer pt-3 px-3">
+                                <div class="input-group d-flex align-items-center justify-content-between mt-auto">
+                                    <input type="text" class="form-control border-0" placeholder="Type Message...">
+                                    <button class="btn  p-0 bg-transparent border-0" type="button">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                            class="bi bi-send" viewBox="0 0 16 16">
+                                            <path
+                                                d="M15.964.686a.5.5 0 0 0-.65-.65L.844 6.509a.5.5 0 0 0 .01.934l4.895 1.555 1.555 4.895a.5.5 0 0 0 .934.01l6.473-14.47ZM6.58 8.228 2.593 6.905 13.634 2.3 6.58 8.228Zm.755.754 1.324 3.987 4.634-11.04L7.335 8.982Z" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-
             </div>
 
             <main id="rightContent" class="col-lg-8 col-md-8 content">
@@ -573,12 +629,14 @@
                             <div class="modal-body">
                                 <div class="d-flex flex-wrap justify-content-between row-gap-3 column-gap-3">
                                     <div class="image-part overflow-hidden">
-                                        <img  src="assets/image/product/Brand2.png" alt="image"/>
+                                        <img src="assets/image/product/Brand2.png" alt="image" />
                                     </div>
                                     <div class="text-part d-flex flex-column row-gap-3">
                                         <div class="main-title-part d-flex justify-content-between">
                                             <h3>Chef's Special Shrimp</h3>
-                                            <button type="button" class="btn-close d-flex align-items-center justify-content-center" data-bs-dismiss="modal" aria-label="Close">x</button>
+                                            <button type="button"
+                                                class="btn-close d-flex align-items-center justify-content-center"
+                                                data-bs-dismiss="modal" aria-label="Close">x</button>
                                         </div>
                                         <p>Crispy shrimp served with iceberg lettuce and our special sauce.</p>
                                         <span class="price">4.100KWD</span>
@@ -599,13 +657,15 @@
                                         </div>
                                         <div>
                                             <label class="form-label">Special Instructions</label>
-                                            <textarea class="form-control" placeholder="Add any special requests here..." rows="3"></textarea>
+                                            <textarea class="form-control"
+                                                placeholder="Add any special requests here..." rows="3"></textarea>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="modal-footer border-top">
-                                <button type="button" class="btn btn-secondary d-flex align-items-center justify-content-center w-100">
+                                <button type="button"
+                                    class="btn btn-secondary d-flex align-items-center justify-content-center w-100">
                                     Add to Cart - 4.100KWD
                                 </button>
                             </div>
@@ -689,7 +749,27 @@
             }
         });
     </script>
-
+    <!--script chat-->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const collapseElement = document.getElementById("collapseExample");
+            const chatAiImage = document.querySelector(".chat-ai");
+    
+            collapseElement.addEventListener("show.bs.collapse", function () {
+                // When the collapse opens, hide the AI image
+                if (chatAiImage) {
+                    chatAiImage.style.display = "none";
+                }
+            });
+    
+            collapseElement.addEventListener("hide.bs.collapse", function () {
+                // When the collapse closes, show the AI image again
+                if (chatAiImage) {
+                    chatAiImage.style.display = "block";
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>

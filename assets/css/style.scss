@@ -148,6 +148,12 @@ header {
                     background: #0B83FD;
                 }
             }
+            &.chat-action{
+                .icon{
+                    background: #fff;
+                    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+                }
+            }
 
             &.home-action {
                 .icon {
@@ -482,6 +488,7 @@ header {
     top: 16px !important;
     bottom: 16px;
     padding-top: 1rem;
+
     .counter {
         input {
             color: #070A13;
@@ -490,65 +497,65 @@ header {
             border-color: transparent !important;
             font-family: 'ReemKufi-Medium';
         }
-    
+
         .counter__decrement,
         .counter__increment {
-            min-inline-size: 60px;
-            max-inline-size: 60px;
-            inline-size: 60px;
-            block-size: 60px;
+            min-inline-size: 50px;
+            max-inline-size: 50px;
+            inline-size: 50px;
+            block-size: 50px;
             border-radius: 100%;
             color: #fff;
             background: linear-gradient(90deg, #0EB0FF 0%, #0B83FD 100%);
         }
     }
-    
+
     .card-total-price {
         border: 1px solid #C5EBFE;
         border-radius: 20px;
         padding: 0.5rem 1rem;
-    
+
         .name {
             color: #585858;
         }
-    
+
         .value {
             font-size: 14px;
             color: #3B3A3A;
             font-family: 'ReemKufi-Medium';
         }
     }
-    
-   
-    
+
+
+
     textarea.form-control {
         resize: unset !important;
         border: 1px solid #C5EBFE;
         border-radius: 20px;
         outline: unset !important;
         box-shadow: none !important;
-    
+
         &::placeholder {
             font-size: 13px;
         }
-    
+
         &::-ms-input-placeholder {
             font-size: 13px;
         }
     }
-    
+
     .card-product-style {
         padding: 16px;
         border-radius: 24px;
         box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
-    
+
         .prouct-image {
             width: 50px;
         }
-    
+
         .text {
             width: calc(100% - 55px);
-    
+
             h6 {
                 font-size: 18px;
                 color: #070A13;
@@ -560,13 +567,13 @@ header {
                 text-overflow: ellipsis;
                 font-family: 'ReemKufi-Medium';
             }
-    
+
             span {
                 font-size: 14px;
                 color: #272A49;
                 font-family: 'ReemKufi-Medium';
             }
-    
+
             input {
                 width: 16px;
                 color: #070A13;
@@ -575,7 +582,7 @@ header {
                 border-color: transparent !important;
                 font-family: 'ReemKufi-Medium';
             }
-    
+
             .counter__decrement,
             .counter__increment {
                 min-inline-size: 18px;
@@ -654,11 +661,12 @@ header {
     color: #585858;
     font-size: 16px;
 }
+
 /*-----------------------
     modal
 -------------------------*/
-.modal{
-    .btn-close{
+.modal {
+    .btn-close {
         width: 24px;
         height: 24px;
         background: #ECECEC;
@@ -668,73 +676,87 @@ header {
         font-size: 19px;
         outline: none !important;
         box-shadow: none !important;
+
         @media (max-width: 991.98px) {
             position: absolute;
             top: 16px;
             inset-inline-end: 16px;
         }
     }
-    .modal-body{
+
+    .modal-body {
         padding-block: 24px;
-        .image-part{
+
+        .image-part {
             @media (min-width: 992px) {
                 width: 310px;
             }
+
             @media (max-width: 991.98px) {
                 width: 100%;
             }
-            img{
+
+            img {
                 border-radius: 24px;
                 width: 100%;
                 height: 268px;
                 object-fit: cover;
             }
         }
-        .main-title-part{
-            h3{
+
+        .main-title-part {
+            h3 {
                 color: #3D3D3D;
                 font-size: 24px;
                 font-family: "ReemKufi-Medium";
                 width: calc(100% - 30px);
             }
         }
-        p{
+
+        p {
             color: #3D3D3D;
         }
-        .price{
+
+        .price {
             font-size: 24px;
             color: #f13035;
             font-family: 'ReemKufi-SemiBold';
         }
-        .form-control{
+
+        .form-control {
             resize: unset;
         }
+
         .counter__decrement,
-            .counter__increment {
-                min-inline-size: 30px;
-                max-inline-size: 30px;
-                inline-size: 30px;
-                block-size: 30px;
-                border-radius: 100%;
-                color: #fff;
-                background: #fff;
-                border: 1px solid #eee;
-                img{
-                    filter: brightness(0) saturate(100%) invert(0%) sepia(96%) saturate(14%) hue-rotate(273deg) brightness(99%) contrast(104%);
-                }
+        .counter__increment {
+            min-inline-size: 30px;
+            max-inline-size: 30px;
+            inline-size: 30px;
+            block-size: 30px;
+            border-radius: 100%;
+            color: #fff;
+            background: #fff;
+            border: 1px solid #eee;
+
+            img {
+                filter: brightness(0) saturate(100%) invert(0%) sepia(96%) saturate(14%) hue-rotate(273deg) brightness(99%) contrast(104%);
             }
-            input {
-                width: 32px;
-                color: #070A13;
-                font-size: 12px;
-                outline: 0 !important;
-                border-color: transparent !important;
-                font-family: 'ReemKufi-Medium';
-            }
+        }
+
+        input {
+            width: 32px;
+            color: #070A13;
+            font-size: 12px;
+            outline: 0 !important;
+            border-color: transparent !important;
+            font-family: 'ReemKufi-Medium';
+        }
     }
-    .modal-footer{
+
+    .modal-footer {
         padding: 6px 16px;
-        .btn{
+
+        .btn {
             min-height: 45px;
             border-radius: 12px;
             background: #f13035;
@@ -744,3 +766,57 @@ header {
         }
     }
 }
+
+/*-----------------------
+    chat-box
+-------------------------*/
+
+.chat-card{
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+    border-radius:30px;
+    z-index: 11;
+    background: #fff;
+    .card-header{
+        h5{
+            font-size: 20px;
+        }
+    }
+    .card-body{
+        max-height: 350px;
+        overflow-y: auto;
+    }
+    .card-footer{
+        .input-group{
+            background: #ECECEC;
+            border: 1px solid #CDCDCD;
+            border-radius: 30px;
+            min-height: 45px;
+            input{
+                width: calc(100% - 50px);
+                outline: 0 !important;
+                background: transparent !important;
+                box-shadow: unset !important;
+            }
+            .btn{
+                width: 40px;
+            }
+        }
+    }
+}
+.chat-bubble {
+    max-width: 80%;
+    padding: 10px 15px;
+    border-radius: 20px;
+  }
+  .chat-left {
+    font-size: 14px;
+    background-color: #ECECEC;
+    border-top-left-radius: 0;
+  }
+  .chat-right {
+    font-size: 14px;
+    background-color: #333337;
+    color: white;
+    border-bottom-right-radius: 0;
+    margin-left: auto;
+  }
