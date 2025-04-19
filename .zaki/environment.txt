@@ -1,0 +1,85 @@
+# SYSTEM INFORMATION
+Operating System: Windows_NT 10.0.26100
+Default Shell: C:\Users\a.elghandour\AppData\Local\Programs\Git\bin\bash.exe
+Home Directory: C:\Users\a.elghandour
+Current Working Directory: c:\Users\a.elghandour\OneDrive - CEQUENS\Desktop\Ghandour Projects\demo
+Platform: win32
+Architecture: x64
+Node Version: v20.18.3
+Total Memory: 16GB
+Free Memory: 1GB
+CPU Cores: 12
+
+Current Time: 4/19/2025, 2:29:29 PM (Africa/Cairo, UTC+2:00)
+
+# EDITOR STATE
+
+Visible Files:
+  assets\js\bootstrap.bundle.min.js
+
+Open Tabs:
+  assets\js\bootstrap.bundle.min.js
+
+# WORKSPACE SUMMARY
+
+Important Project Files:
+  README.md
+
+Files:
+  README.md
+  assets/
+  index.html
+  assets/css/
+  assets/fonts/
+  assets/image/
+  assets/js/
+  assets/swiper/
+  assets/css/bootstrap.min.css
+  assets/css/bootstrap.min.css.map
+  assets/css/style.css
+  assets/css/style.css.map
+  assets/css/style.scss
+  assets/fonts/ReemKufi-Bold.ttf
+  assets/fonts/ReemKufi-Medium.ttf
+  assets/fonts/ReemKufi-Regular.ttf
+  assets/fonts/ReemKufi-SemiBold.ttf
+  assets/image/chat/
+  assets/image/fav.png
+  assets/image/icon/
+  assets/image/logo/
+  assets/image/product/
+  assets/js/bootstrap.bundle.min.js
+  assets/js/bootstrap.bundle.min.js.map
+  assets/swiper/css/
+  assets/swiper/js/
+  assets/image/chat/ai-chat.png
+  assets/image/icon/cart.svg
+  assets/image/icon/chat-avatar.svg
+  assets/image/icon/chat.svg
+  assets/image/icon/Edit.svg
+  assets/image/icon/home.svg
+  assets/image/icon/menu.svg
+  assets/image/icon/mic.svg
+  assets/image/icon/minus.svg
+  assets/image/icon/plus.svg
+  assets/image/icon/Star.svg
+  assets/image/icon/woman.svg
+  assets/image/logo/logo.jpg
+  assets/image/product/banner.png
+  assets/image/product/brand.png
+  assets/image/product/Brand1.png
+  assets/image/product/Brand2.png
+  assets/image/product/Brand3.png
+  assets/image/product/Brand4.png
+  assets/image/product/Burger.png
+  assets/image/product/burger1.png
+  assets/image/product/burger2.png
+  assets/image/product/burger3.png
+  assets/image/product/Desserts.png
+  assets/image/product/Drinks.png
+  assets/image/product/pizza.png
+  assets/image/product/Samosa.png
+  assets/image/product/Sausage.png
+  assets/swiper/css/swiper-bundle.min.css
+  assets/swiper/js/swiper.min.js
+  assets/swiper/js/swiper.min.js.map

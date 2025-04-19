@@ -380,6 +380,22 @@ header .header-action-list li.cart-action .badge {
   right: 0;
   left: 0;
 }
+.chat-ai-card .btn-speak.recording {
+  background: rgba(220, 53, 69, 0.8); /* Red background when recording */
+  animation: pulse 1.5s infinite; /* Pulsing animation */
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 
 /*-----------------------
     chat-ai-card

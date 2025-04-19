@@ -64,6 +64,10 @@
             <div id="leftSidebar" class="col-lg-4 col-md-4 sidebar position-relative">
                 <div class="chat-ai-card">
                     <img class="img-fluid chat-ai" src="assets/image/chat/ai-chat.png" alt="AI-chat" />
+                    <button class="btn btn-speak d-flex align-items-center justify-content-center gap-2">
+                        <img width="24px" src="assets/image/icon/mic.svg" alt="microphone" />
+                        <span>speak</span>
+                    </button>
                     <div class="collapse" id="collapseExample">
                         <div class="chat-card py-4 position-relative">
                             <div class="card-header px-3">
@@ -768,6 +772,72 @@
                     chatAiImage.style.display = "block";
                 }
             });
+        });
+    </script>
+    
+    <!-- Speech Recognition Script -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const speakButton = document.querySelector(".btn-speak");
+            const chatAiImage = document.querySelector(".chat-ai");
+            const collapseElement = document.getElementById("collapseExample");
+            
+            // Check if the browser supports the Web Speech API
+            if ('SpeechRecognition' in window || 'webkitSpeechRecognition' in window) {
+                const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+                const recognition = new SpeechRecognition();
+                
+                recognition.lang = 'en-US';
+                recognition.continuous = false;
+                recognition.interimResults = false;
+                
+                speakButton.addEventListener("click", function() {
+                    // Visual feedback that recording is starting
+                    speakButton.classList.add("recording");
+                    speakButton.querySelector("span").textContent = "listening...";
+                    
+                    // Start speech recognition
+                    recognition.start();
+                });
+                
+                recognition.onresult = function(event) {
+                    const speechResult = event.results[0][0].transcript;
+                    console.log('Speech recognized:', speechResult);
+                    
+                    // Open the chat interface
+                    if (!collapseElement.classList.contains("show")) {
+                        new bootstrap.Collapse(collapseElement).show();
+                    }
+                    
+                    // Fill the input field with the recognized speech
+                    const inputField = document.querySelector(".chat-card .input-group input");
+                    if (inputField) {
+                        inputField.value = speechResult;
+                    }
+                    
+                    // Reset button state
+                    speakButton.classList.remove("recording");
+                    speakButton.querySelector("span").textContent = "speak";
+                };
+                
+                recognition.onend = function() {
+                    // Reset button state if it ends without results
+                    speakButton.classList.remove("recording");
+                    speakButton.querySelector("span").textContent = "speak";
+                };
+                
+                recognition.onerror = function(event) {
+                    console.error('Speech recognition error:', event.error);
+                    // Reset button state
+                    speakButton.classList.remove("recording");
+                    speakButton.querySelector("span").textContent = "speak";
+                };
+            } else {
+                // Browser doesn't support speech recognition
+                speakButton.addEventListener("click", function() {
+                    alert("Sorry, your browser doesn't support speech recognition.");
+                });
+            }
         });
     </script>
 </body>
